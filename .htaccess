@@ -1,0 +1,13 @@
+#RewriteEngine On
+#Verificar si el usuario no ha iniciado sesión
+#RewriteCond %{HTTP_COOKIE} !admin_login [NC]
+#RewriteCond %{HTTP_COOKIE} !operador_login [NC]
+
+# Excluir algunas rutas para permitir el acceso sin sesión (por ejemplo, páginas de inicio de sesión)
+#RewriteCond %{REQUEST_URI} !/ruta_hacia_la_pagina_de_login.php
+#RewriteCond %{REQUEST_URI} !/ruta_hacia_la_pagina_de_inicio.php
+#Agrega más condiciones para otras rutas permitidas
+
+# Redirigir a la página de inicio de sesión si no hay sesión
+#RewriteRule ^admin/ ../dashboard/admon_carpinteria/index.php [R=302,L]
+#RewriteRule ^operador/ ../dashboard/admon_carpinteria/index.php [R=302,L]

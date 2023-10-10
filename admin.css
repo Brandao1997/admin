@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333;
+    min-height: 7vh;
+    width: 100%;
+    border-bottom: 3.5px solid;
+    border-image-source : linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-image-slice: 1;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size:2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+nav a:hover{
+    color: red;
+    text-decoration: none;
+
+}
+
+.right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main {
+    min-height: 85vh;
+    min-width:100%;
+    background-color: gainsboro;
+}
+
+footer {
+    min-height: 8vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 3.5px solid;
+    border-image-source : linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-image-slice: 1;
+}
+
+footer p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+
+}
+
+.container {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+input[type=text] {
+    font-size: 2rem;
+    border-radius: 16px;
+    width: 350px;
+    border: 0.3px solid gray;
+}
+
+input[type=number] {
+    font-size: 2rem;
+    border-radius: 16px;
+    border: 0.3px solid gray;
+}
+
+input[type=date] {
+    font-size: 2rem;
+    border-radius: 16px;
+    border: 0.3px solid gray;
+}
+
+button[type=submit] {
+    font-size: 2rem;
+    border-radius: 16px;
+}
+
+.bor {
+    border: 3.5px solid;
+    border-image-source : linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-image-slice: 1;
+    padding: 40px;
+}
+
+#producto {
+    top: 18px;
+    left: 55px;
+    position: relative;
+    background-color: white;
+    width: 12rem;
+    font-weight: bold;
+    color:red;
+
+}
+
+label{
+    font-weight: bolder;
+    color:midnightblue;
+
+}
+img{
+    width: 100%;
+    height: 859px;
+}
+
+h5{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.back{
+    background-color: gray;
+}
+
+.logo{
+    width: 55px; 
+    height: 40px;
+    border-radius: 50%;
+    border:3px solid red; 
+    margin-top: -5px;
+
+}
+
+@media screen and (max-width: 700px) {
+
+    nav, .right {
+        flex-direction: column;
+    }
+}
